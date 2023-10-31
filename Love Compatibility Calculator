@@ -1,0 +1,13 @@
+# Ask for the names of two individuals
+name1 = input("Name 1: ").lower()
+name2 = input("Name 2: ").lower()
+
+# Count the occurrences of the letters in "TRUE LOVE" in both names
+true_count = name1.count("t") + name2.count("t") + name1.count("r") + name2.count("r") + name1.count("u") + name2.count("u") + name1.count("e") + name2.count("e")
+love_count = name1.count("l") + name2.count("l") + name1.count("o") + name2.count("o") + name1.count("v") + name2.count("v") + name1.count("e") + name2.count("e")
+
+# Join the counts for "TRUE" and "LOVE"
+love_score = int(str(true_count) + str(love_count))
+
+# Print the Love Score
+print(f"Your score is {love_score}.")
